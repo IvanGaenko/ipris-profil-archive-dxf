@@ -1,0 +1,88 @@
+{
+  "data": {
+    "windowBounds": {
+      "width": 860,
+      "height": 680
+    },
+    "content": {
+      "archivePath": [
+        {
+          "contentId": 1,
+          "contentValue": "\\\\Fileserver\\архив\\Архив DXF"
+        }
+      ],
+      "extensions": [
+        {
+          "contentId": 1,
+          "contentValue": ".dxf"
+        }
+      ],
+      "validOps": [
+        {
+          "contentId": 1,
+          "contentValue": "25"
+        },
+        {
+          "contentId": 2,
+          "contentValue": "40"
+        }
+      ],
+      "targetSheets": [
+        {
+          "contentId": 1,
+          "contentValue": "1.2"
+        }
+      ],
+      "checkedBy": [
+        {
+          "contentId": 1,
+          "contentName": "Поиск по столбцу",
+          "contentValue": "C"
+        }
+      ],
+      "orderHeaders": [
+        {
+          "contentId": 1,
+          "contentValue": "Num",
+          "contentName": "A"
+        },
+        {
+          "contentId": 2,
+          "contentValue": "Name",
+          "contentName": "B"
+        },
+        {
+          "contentId": 3,
+          "contentValue": "Definion",
+          "contentName": "C"
+        },
+        {
+          "contentId": 4,
+          "contentValue": "Count",
+          "contentName": "D"
+        },
+        {
+          "contentId": 5,
+          "contentValue": "Prev",
+          "contentName": "E"
+        },
+        {
+          "contentId": 6,
+          "contentValue": "Operations",
+          "contentName": "F"
+        },
+        {
+          "contentId": 7,
+          "contentValue": "Next",
+          "contentName": "G"
+        }
+      ],
+      "visual": [
+        {
+          "contentId": 1,
+          "contentValue": false
+        }
+      ]
+    }
+  }
+}

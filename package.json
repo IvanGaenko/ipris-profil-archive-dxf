@@ -1,0 +1,123 @@
+{
+  "name": "ipris-profil-archive-dxf",
+  "description": "Ipris-Profil Archive Dxf Parser",
+  "version": "0.1.0",
+  "author": "Ivan Gaenko",
+  "private": true,
+  "homepage": "./",
+  "main": "public/electron.js",
+  "dependencies": {
+    "@fontsource/roboto": "^4.5.0",
+    "@material-ui/core": "^4.12.2",
+    "@material-ui/icons": "^4.11.2",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^11.2.7",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.24",
+    "@types/material-ui": "^0.21.9",
+    "@types/node": "^14.17.6",
+    "@types/react": "^17.0.15",
+    "@types/react-dom": "^17.0.9",
+    "concurrently": "^6.2.0",
+    "electron-reload": "^1.5.0",
+    "i18next": "^20.3.5",
+    "i18next-electron-fs-backend": "^1.3.8",
+    "i18next-fs-backend": "^1.1.1",
+    "mobx": "^6.3.2",
+    "mobx-react": "^7.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-i18next": "^11.11.4",
+    "react-router-dom": "^5.2.0",
+    "typescript": "^4.3.5",
+    "wait-on": "^6.0.0",
+    "web-vitals": "^1.1.2",
+    "xlsx": "^0.17.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/eslint-parser": "^7.14.7",
+    "@babel/preset-env": "^7.14.8",
+    "@babel/preset-react": "^7.14.5",
+    "@babel/preset-typescript": "^7.14.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "electron": "^13.1.7",
+    "electron-builder": "^22.11.7",
+    "eslint": "^7.31.0",
+    "react-scripts": "4.0.3",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-react": "^7.24.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "husky": "^7.0.0",
+    "nodemon": "^2.0.12",
+    "prettier": "^2.3.1",
+    "pretty-quick": "^3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "ts-watch": "npx tsc -p ./src/utils/tsconfig.json -w",
+    "electron-start-old": "nodemon --exec \"wait-on http://localhost:3000 && electron .\"",
+    "electron-start": "wait-on http://localhost:3000 && electron .",
+    "electron-dev": "concurrently \"yarn run ts-watch\" \"yarn start\" \"yarn run electron-start\"",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "yarn run build",
+    "electron-pack": "electron-builder build -w",
+    "lint": "npx eslint src/**/*.{js,ts}",
+    "lint:fix": "npx eslint --fix src/**/*.{js,ts}"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "build": {
+    "appId": "com.ipris-profil.archive-dxf-parser",
+    "productName": "Ipris-Profil Archive Dxf Parser",
+    "copyright": "Copyright © 2021 Ivan Gaenko",
+    "win": {
+      "target": "portable",
+      "icon": "public\\ipris_logo.png"
+    },
+    "portable": {
+      "artifactName": "Ipris-Profil Archive Dxf Parser.exe"
+    },
+    "files": [
+      "dist/**/*",
+      "public/**/*",
+      "public/localization/!(locales)"
+    ],
+    "directories": {
+      "buildResources": "public"
+    },
+    "extraFiles": [
+      "public/localization/locales/**/*"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}

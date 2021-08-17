@@ -1,0 +1,213 @@
+{
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2021": true,
+    "jest": true
+  },
+  "root": true,
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "airbnb",
+    "plugin:react-hooks/recommended",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12
+  },
+  "plugins": ["react", "prettier", "react-hooks"],
+  "rules": {
+    "no-console": 0,
+    "prettier/prettier": "warn",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "react/jsx-props-no-spreading": 0,
+    "react/prop-types": 1,
+    "no-restricted-syntax": "off",
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }],
+    "import/order": [
+      "warn",
+      {
+        "newlines-between": "always-and-inside-groups"
+      }
+    ],
+    "no-return-assign": "off",
+    "global-require": "off",
+    "no-empty": "off",
+    "no-else-return": "warn",
+    "no-param-reassign": "warn",
+    "object-shorthand": "warn",
+    "padding-line-between-statements": [
+      "warn",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "class"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "for"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "function"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "if"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "switch"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "try"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "while"
+      },
+      {
+        "blankLine": "always",
+        "prev": "block-like",
+        "next": ["let", "const"]
+      }
+    ],
+    "prefer-const": "warn",
+    "react/jsx-boolean-value": "warn",
+    "react/jsx-curly-brace-presence": "warn",
+    "react/jsx-key": "warn",
+    "react/jsx-sort-props": [
+      "warn",
+      {
+        "callbacksLast": true,
+        "reservedFirst": true,
+        "shorthandLast": true
+      }
+    ],
+    "react/no-array-index-key": "warn",
+    "react/self-closing-comp": "warn"
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["react", "prettier", "react-hooks", "@typescript-eslint"],
+      "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended",
+        "airbnb",
+        "plugin:react-hooks/recommended",
+        "plugin:@typescript-eslint/recommended",
+        "plugin:prettier/recommended"
+      ],
+      "rules": {
+        "no-console": 0,
+        "prettier/prettier": "warn",
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "off",
+        "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+        "react/jsx-props-no-spreading": 0,
+        "react/prop-types": 1,
+        "no-restricted-syntax": "off",
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": true }
+        ],
+        "import/order": [
+          "warn",
+          {
+            "newlines-between": "always-and-inside-groups"
+          }
+        ],
+        "no-return-assign": "off",
+        "global-require": "off",
+        "no-empty": "off",
+        "no-else-return": "warn",
+        "no-param-reassign": "warn",
+        "object-shorthand": "warn",
+        "padding-line-between-statements": [
+          "warn",
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "class"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "for"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "function"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "if"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "return"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "switch"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "try"
+          },
+          {
+            "blankLine": "always",
+            "prev": "*",
+            "next": "while"
+          },
+          {
+            "blankLine": "always",
+            "prev": "block-like",
+            "next": ["let", "const"]
+          }
+        ],
+        "prefer-const": "warn",
+        "react/jsx-boolean-value": "warn",
+        "react/jsx-curly-brace-presence": "warn",
+        "react/jsx-key": "warn",
+        "react/jsx-sort-props": [
+          "warn",
+          {
+            "callbacksLast": true,
+            "reservedFirst": true,
+            "shorthandLast": true
+          }
+        ],
+        "react/no-array-index-key": "warn",
+        "react/self-closing-comp": "warn"
+      }
+    }
+  ]
+}

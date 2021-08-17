@@ -1,0 +1,66 @@
+// Component Styles
+const styles = (theme) => ({
+  root: {
+    padding: '80px 10vw 4vh 10vw',
+    minHeight: '100vh',
+    minWidth: '100vw',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  emptyContentContainer: {
+    width: '90%',
+    maxWidth: '1000px',
+    minHeight: 'calc(100vh - 100px)',
+    borderRadius: '10px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    border: `3px dotted gray`,
+    opacity: '0.5',
+    zIndex: 500,
+    position: 'absolute',
+  },
+  isHover: {
+    width: '90%',
+    maxWidth: '1000px',
+    minHeight: 'calc(100vh - 100px)',
+    borderRadius: '10px',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    border: `3px solid gray`,
+    opacity: '1',
+    zIndex: 500,
+    position: 'absolute',
+  },
+  isHoverIcon: {
+    flex: 1,
+    fontSize: '20vh',
+    color: theme.palette.common.grey,
+    opacity: '0.8',
+  },
+  emptyContentIcon: {
+    flex: 1,
+    fontSize: '20vh',
+    color: theme.palette.common.grey,
+    opacity: '0.5',
+  },
+  isHoverText: {
+    flex: 1,
+    alignItems: 'center',
+    display: 'flex',
+    color: theme.palette.common.grey,
+    opacity: '0.8',
+  },
+  emptyContentText: {
+    flex: 1,
+    alignItems: 'center',
+    display: 'flex',
+    color: theme.palette.common.grey,
+    opacity: '0.5',
+  },
+});
+
+export default styles;

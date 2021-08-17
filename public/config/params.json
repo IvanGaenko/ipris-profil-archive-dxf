@@ -1,0 +1,48 @@
+{
+  "configFileName": "user-preferences",
+  "title": "Ipris-Profil Archive Dxf Parser",
+  "optionsHeader": [
+    {
+      "id": 1,
+      "label": "Путь архива",
+      "value": "archivePath",
+      "type": "input"
+    },
+    {
+      "id": 2,
+      "label": "Расширения",
+      "value": "extensions",
+      "type": "chip"
+    },
+    {
+      "id": 3,
+      "label": "Операции",
+      "value": "validOps",
+      "type": "chip"
+    },
+    {
+      "id": 4,
+      "label": "Название листа",
+      "value": "targetSheets",
+      "type": "chip"
+    },
+    {
+      "id": 5,
+      "label": "Поиск по столбцу",
+      "value": "checkedBy",
+      "type": "list"
+    },
+    {
+      "id": 6,
+      "label": "Заголовки заказа",
+      "value": "orderHeaders",
+      "type": "select"
+    },
+    {
+      "id": 7,
+      "label": "Отображение",
+      "value": "visual",
+      "type": "switch"
+    }
+  ]
+}
